@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-</head>
-<body style="background-color: brown;">
+    <style>
 
-    <ul 
-        style="display: 
-        flex; align-items: 
-        center; justify-content: 
-        space-around; 
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header-conteiner{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-around; 
         list-style-type: none; 
         font-size: 20px;
         background-color: black ;
         height: 100px;
-        " >
-            <li><a style="text-decoration: none;" href="/Navegacao/index.html">Home</a></li>
-            <li><a style="text-decoration: none;"  href="/Navegacao/Contatos.html">Contato</a></li>
-            <li><a style="text-decoration: none;"  href="/Navegacao/Conteudo.html">Conteudo</a></li>
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .body-conteiner{
+            background-color: rgb(221, 148, 12);
+            width: 100%;
+            height: 545px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .body-content{
+            width: 80%;
+        }
+        .leon img{
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="header-conteiner">
+            <li><a href="/Navegacao/index.html">Home</a></li>
+            <li><a href="/Navegacao/Contatos.html">Contato</a></li>
+            <li><a href="/Navegacao/Conteudo.html">Conteudo</a></li>
     </ul>
 
-    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Rei Leão</h1>
-    <img width="400px" src="/Navegacao/leao.jpg" alt="">
-    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reiciendis expedita iure? Ipsum, iure possimus!</p>
-
+    <div class="body-conteiner">
+        <div class="body-content">
+            <h1>Rei Leao</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Vero magnam eum tempora eos iusto. 
+                Error aut quis beatae neque saepe omnis? 
+                Quibusdam, nam autem. Doloremque aut dolore 
+                alias deserunt vitae!</p>
+        </div>
+        <div class="leon">
+            <img src="/Navegacao/leao.jpg" alt="">
+        </div>
+    </div>
     
 </body>
 </html>
